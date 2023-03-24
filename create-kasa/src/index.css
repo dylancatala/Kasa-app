@@ -1,0 +1,23 @@
+html,
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+  padding: 25px 0 0 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container>main {
+  min-height: 75vh;
+}

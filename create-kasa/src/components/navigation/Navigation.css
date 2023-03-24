@@ -1,0 +1,32 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation>img {
+  height: 68px;
+  width: 200px;
+}
+
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 45px;
+  list-style: none;
+  font-size: 22px;
+}
+
+a {
+  color: #FF6060;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+
+
+a:active,
+a:hover {
+  border-bottom: 2px solid #FF6060;
+}
