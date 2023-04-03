@@ -9,8 +9,8 @@ const Home = () => {
     <div className='page-wrapper'>
       <Header title="Chez vous, partout et ailleurs" imageURL="images/home-banner.png" />
       <div className="grid-template">
-      {dataHouse.map((items, index) => (
-          <Card key={index} image={items.cover} />
+        {dataHouse.map((item, index) => (
+          <Card key={index} data={item} />
         ))}
       </div>
     </div>

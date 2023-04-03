@@ -8,7 +8,7 @@ const Accordion = ({ title, content }) => {
   return (
     <div className={classNames(!isOpen && 'collapse', 'accordion-container')}>
       <header className='accordion-header'>
-        <p className=''>{title}</p>
+        <p className='accordion-title'>{title}</p>
         <button onClick={() => setIsOpen(!isOpen)}>+</button>
       </header>
       <div className='accordion-content'>{content}</div>

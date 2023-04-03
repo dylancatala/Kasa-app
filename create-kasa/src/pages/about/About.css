@@ -15,6 +15,6 @@
 .about-content {
   display: flex;
   flex-direction: column;
-  padding: 25px 100px;
-  gap: 15px;
+  padding: 0 100px;
+  gap: 30px;
 }

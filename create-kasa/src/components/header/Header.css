@@ -1,7 +1,7 @@
 .banner {
   text-align: center;
   position: relative;
-  padding: 50px 0;
+  padding: 50px 0 30px 0;
 }
 
 .banner>img {
@@ -9,6 +9,8 @@
   width: 100%;
   height: 225px;
   border-radius: 20px;
+  mix-blend-mode: darken;
+  opacity: 0.9;
 }
 
 .home-title {

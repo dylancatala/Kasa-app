@@ -30,7 +30,14 @@
   cursor: pointer;
 }
 
+
+.accordion-title {
+  font-size: 24px;
+}
+
 .accordion-content {
-  padding: 10px 18px;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 25px 40px 10px 18px;
   color: #FF6060;
 }
