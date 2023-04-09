@@ -1,6 +1,7 @@
 .carousel-container {
   height: 415px;
-  width: 1240px;
+  width: 1215px;
+  margin-top: 20px;
 }
 
 .carousel-container > img {
@@ -10,10 +11,25 @@
   border-radius: 25px;
 }
 
+.fa-solid {
+  font-size: 70px;
+  cursor: pointer;
+  color: white;
+}
 
+.arrows-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  top: -250px;
+}
+
+
+/* 
 button {
   padding: 15px;
   cursor: pointer;
   position: relative;
   top: -25px;
-}
+} */

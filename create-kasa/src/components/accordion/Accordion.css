@@ -1,8 +1,8 @@
 .accordion-container {
   display: flex;
   flex-direction: column;
-  background: #eee;
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  flex: 1;
 }
 
 .accordion-container.collapse>.accordion-content {
@@ -36,6 +36,7 @@
 }
 
 .accordion-content {
+  background: #eee;
   font-size: 20px;
   line-height: 25px;
   padding: 25px 40px 10px 18px;

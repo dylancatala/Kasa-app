@@ -20,8 +20,10 @@ const Carousel = ({ images }) => {
       {images && (
         <Fragment>
           <img src={images[image]} alt="Accommodation" />
-          <button onClick={previous}>-</button>
-          <button onClick={next}>+</button>
+          <div className='arrows-buttons'>
+          <i onClick={previous} class="fa-solid fa-chevron-left"></i>
+          <i onClick={next} class="fa-solid fa-chevron-right"></i>
+          </div>
         </Fragment>
       )}
     </div>
