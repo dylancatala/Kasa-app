@@ -15,15 +15,18 @@ const Carousel = ({ images }) => {
     setImage(newImage)
   };
 
+
   return (
     <div className='carousel-container'>
       {images && (
         <Fragment>
           <img src={images[image]} alt="Accommodation" />
-          <div className='arrows-buttons'>
-          <i onClick={previous} class="fa-solid fa-chevron-left"></i>
-          <i onClick={next} class="fa-solid fa-chevron-right"></i>
-          </div>
+          {images.length > 1 && (
+            <div className='arrows-buttons'>
+              <i onClick={previous} class="fa-solid fa-chevron-left"></i>
+              <i onClick={next} class="fa-solid fa-chevron-right"></i>
+            </div>
+          )}
         </Fragment>
       )}
     </div>

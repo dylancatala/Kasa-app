@@ -5,11 +5,14 @@ import Carousel from '../../components/carousel/Carousel';
 import dataHouse from '../../data/logements.json';
 import Accordion from '../../components/accordion/Accordion';
 import Tags from '../../components/tags/Tags';
+import Review from '../../components/review/Review';
+import Profile from '../../components/profile/Profile';
 
 
 const Products = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
+
   useEffect(() => {
     const data = dataHouse.find((item) => item.id === id);
     setData(data)
@@ -17,20 +20,34 @@ const Products = () => {
 
 
 
+
   return (
     <div>
       <Carousel images={data?.pictures} />
-      <h1 className='main-title'>{data?.title}</h1>
-      <p className='sub-title-location'>{data?.location}</p>
-      <div className='tags-section'>
-        <Tags />
+      <div className='info-section'>
+        <div className='accommodation-info'>
+          <h1 className='main-title'>{data?.title}</h1>
+          <p className='sub-title-location'>{data?.location}</p>
+          <div className='tags-section'>
+            {data?.tags.map((tag, idx) => (
+              <Tags key={idx} title={tag} />
+            ))}
+          </div>
+        </div>
+        <div className='host-infos'>
+          <Profile name={data?.host.name} picture={data?.host.picture} />
+          <div className='review-section'>
+            <Review rate={data?.rating} />
+          </div>
+        </div>
       </div>
+
       <div className='accordion-position'>
         <Accordion title="Description" content={data?.description} />
-        <Accordion title="Equipements" content={data?.equipments} />
+        <Accordion title="Équipements" content={data?.equipments} />
       </div>
     </div>
-  );
+  )
 };
 
 export default Products;

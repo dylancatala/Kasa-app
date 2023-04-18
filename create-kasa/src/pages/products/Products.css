@@ -19,5 +19,29 @@
 .tags-section {
   display: flex;
   gap: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  padding-top: 15px;
 }
+
+.review-section {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+}
+
+
+/* .hoster-name {
+  font-size: 30px;
+  color: black;
+} */
+
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
