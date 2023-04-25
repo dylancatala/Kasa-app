@@ -13,11 +13,14 @@ const Accordion = ({ title, content }) => {
       setData(content);
   }, [content]);
 
+
+
+
   return (
     <div className={classNames(!isOpen && 'collapse', 'accordion-container')}>
-      <header className='accordion-header'>
+      <header onClick={() => setIsOpen(!isOpen)} className='accordion-header '>
         <p className='accordion-title'>{title}</p>
-        <button onClick={() => setIsOpen(!isOpen)}>+</button>
+        <button><i className="fa-solid fa-chevron-down"></i></button>
       </header>
       <div className='accordion-content' dangerouslySetInnerHTML={{ __html: data }} />
     </div>

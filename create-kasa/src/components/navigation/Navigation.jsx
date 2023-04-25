@@ -7,7 +7,9 @@ import logo from '../../images/LOGO.png';
 const Navigation = () => {
   return (
     <div className="navigation">
-      <img src={logo} alt="" />
+      <NavLink to="/">
+      <img src={logo} alt="Logo KASA" />
+      </NavLink>
       <ul>
         <NavLink to="/">
           <li>Accueil</li>

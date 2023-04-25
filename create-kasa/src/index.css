@@ -8,6 +8,7 @@ body,
   height: 100vh;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  width: 100%;
 }
 
 
@@ -21,3 +22,30 @@ body,
 .container>main {
   min-height: 75vh;
 }
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.container {
+ padding: 0;
+}
+.container > main {
+  padding: 0 20px;
+}
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+  .container > main {
+    padding: 0 20px;
+  }
+}
+

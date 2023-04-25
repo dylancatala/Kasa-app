@@ -1,7 +1,10 @@
 .profile-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  width: 80%;
+  text-align: right;
+  gap: 10px;
 }
 
 .profile-name {
@@ -14,4 +17,27 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+  .profile-picture>img {
+    width: 55px;
+    height: 55px;
+  }
+  .profile-name {
+    font-size: 15px;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .profile-picture>img {
+    width: 50px;
+    height: 50px;
+  }
+  .profile-name {
+    font-size: 15px;
+  }
 }

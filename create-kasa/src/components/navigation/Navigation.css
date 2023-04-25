@@ -7,6 +7,7 @@
 .navigation>img {
   height: 68px;
   width: 200px;
+  cursor: pointer;
 }
 
 
@@ -29,4 +30,32 @@
 .navigation a:active,
 .navigation a:hover {
   border-bottom: 2px solid #FF6060;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navigation {
+    padding: 10px 20px 0 20px;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px 0 20px;
+  }
+
+  .navigation>img {
+    width: 145px;
+    height: 47px;
+  }
+
+  .navigation>ul {
+    font-size: 12px;
+    text-transform: uppercase;
+    gap: 20px;
+  }
 }

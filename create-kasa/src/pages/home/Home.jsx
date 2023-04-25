@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className='page-wrapper'>
       <Header title="Chez vous, partout et ailleurs" imageURL="images/home-banner.png" />
-      <div className="grid-template">
+      <div className="flex-template">
         {dataHouse.map((item, index) => (
           <Card key={index} data={item} />
         ))}

@@ -1,4 +1,26 @@
+.review-container {
+  display: flex;
+  gap: 5px;
+}
+
 .fa-star {
-  font-size: 25px;
+  font-size: 20px;
   color: #E3E3E3;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .fa-star {
+    font-size: 16px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 767px){
+  .fa-star {
+    font-size: 16px;
+  }
 }

@@ -15,6 +15,7 @@
   padding: 10px 18px;
   background-color: #FF6060;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .accordion-header>p {
@@ -26,8 +27,11 @@
 .accordion-header>button {
   background-color: transparent;
   border: none;
-  height: 20px;
-  cursor: pointer;
+  
+}
+
+.accordion-header>button>.fa-chevron-down {
+  font-size: 20px;
 }
 
 
@@ -46,3 +50,30 @@
   border-bottom-right-radius: 10px;
 }
 
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .accordion-title {
+    font-size: 16px;
+  }
+  .accordion-content {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .accordion-title {
+    font-size: 16px;
+  }
+  .accordion-content {
+    font-size: 16px;
+  }
+}

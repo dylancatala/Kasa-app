@@ -32,3 +32,21 @@
   justify-content: center;
   font-size: 18px;
 }
+
+
+
+@media screen and (max-width: 767px) {
+  .Nf-error {
+    font-size: 96px;
+  }
+
+  .Nf-text {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .Nf-goback {
+    font-size: 14px;
+  }
+}
