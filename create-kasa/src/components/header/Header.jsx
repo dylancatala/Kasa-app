@@ -1,11 +1,12 @@
 import React from 'react';
 import "./Header.css";
 
-const Header = ({title, imageURL}) => {
+import { classNames } from '../../helpers/style';
+
+const Header = ({ title, home }) => {
   return (
-    <div className="banner">
-      <img src={imageURL} alt="Landscape" />
-      <h1 className='home-title'>{title}</h1>
+    <div className={classNames(home ? 'home' : 'about', 'banner')}>
+      <p className='home-title'>{title}</p>
     </div>
   );
 };

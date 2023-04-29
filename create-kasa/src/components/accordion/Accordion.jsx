@@ -14,13 +14,21 @@ const Accordion = ({ title, content }) => {
   }, [content]);
 
 
+  const style = {
+    transform: !isOpen ? 'rotate(180deg)' : '',
+    transition: 'transform 0.4s',
+  }
+
+  if(isOpen) {
+    
+  }
 
 
   return (
     <div className={classNames(!isOpen && 'collapse', 'accordion-container')}>
       <header onClick={() => setIsOpen(!isOpen)} className='accordion-header '>
         <p className='accordion-title'>{title}</p>
-        <button><i className="fa-solid fa-chevron-down"></i></button>
+        <button><i className="fa-solid fa-chevron-down" style={style}></i></button>
       </header>
       <div className='accordion-content' dangerouslySetInnerHTML={{ __html: data }} />
     </div>

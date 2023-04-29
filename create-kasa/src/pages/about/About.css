@@ -1,9 +1,10 @@
-.about-banner {
+.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
 }
+
 
 .about-banner>img {
   object-fit: cover;
@@ -16,6 +17,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 100px;
+  margin-bottom: 50px;
   gap: 30px;
 }
 
@@ -24,6 +26,7 @@
     width: 730px;
     height: 220px;
   }
+
   .about-content {
     padding: 0;
   }

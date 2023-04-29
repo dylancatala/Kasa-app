@@ -5,6 +5,13 @@
   flex: 1;
 }
 
+/* .accordion-container:hover > .accordion-header>button>.fa-chevron-down {
+  transition: all 1s;
+  transform: rotate(180deg);
+} */
+
+
+
 .accordion-container.collapse>.accordion-content {
   display: none;
 }
@@ -56,10 +63,6 @@
 
 
 
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .accordion-title {
     font-size: 16px;
@@ -75,5 +78,6 @@
   }
   .accordion-content {
     font-size: 16px;
+    margin-bottom: 15px;
   }
 }

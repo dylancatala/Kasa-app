@@ -9,7 +9,7 @@ import data from '../../data/About.json';
 const About = () => {
   return (
     <div className='page-wrapper'>
-      <Header imageURL="images/about-banner.png" />
+      <Header />
       <div className='about-content'>
         {data.map((item, idx) => (
           <Accordion key={idx} title={item.title} content={item.content} />

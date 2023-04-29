@@ -36,7 +36,10 @@
   align-items: center;
 }
 
-
+.host-infos {
+  display: flex;
+  flex-direction: column;
+}
 
 
 
@@ -110,11 +113,13 @@
     align-items: center;
     width: 100%;
     padding-bottom: 15px;
+    padding-top: 15px;
   }
   
   .accordion-position {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin-bottom: 25px;
   }
 }

@@ -27,6 +27,7 @@ const Carousel = ({ images }) => {
               <i onClick={next} className="fa-solid fa-chevron-right"></i>
             </div>
           )}
+            {/* <p>{image + 1}/{images.length}</p> */}
         </Fragment>
       )}
     </div>

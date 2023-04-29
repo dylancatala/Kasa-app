@@ -33,7 +33,6 @@
 }
 
 
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .navigation {
     padding: 10px 20px 0 20px;
@@ -48,7 +47,7 @@
     padding: 10px 20px 0 20px;
   }
 
-  .navigation>img {
+  .navigation> a > img{
     width: 145px;
     height: 47px;
   }
