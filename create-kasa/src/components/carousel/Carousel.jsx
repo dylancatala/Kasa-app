@@ -17,18 +17,17 @@ const Carousel = ({ images }) => {
 
 
   return (
-    <div className='carousel-container'>
+    <div className='carousel-container' style={{ backgroundImage: `url(${images && images[image]})` }}>
       {images && (
-        <Fragment>
-          <img src={images[image]} alt="Accommodation" />
-          {images.length > 1 && (
+        images.length > 1 && (
+          <Fragment>
             <div className='arrows-buttons'>
               <i onClick={previous} className="fa-solid fa-chevron-left"></i>
               <i onClick={next} className="fa-solid fa-chevron-right"></i>
             </div>
-          )}
-            {/* <p>{image + 1}/{images.length}</p> */}
-        </Fragment>
+            <p className='image-counter'>{image + 1}/{images.length}</p>
+          </Fragment>
+        )
       )}
     </div>
   );

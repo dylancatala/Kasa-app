@@ -27,8 +27,8 @@
 
 
 
-.navigation a:active,
-.navigation a:hover {
+.navigation a:not(.logo):active,
+.navigation a:not(.logo):hover {
   border-bottom: 2px solid #FF6060;
 }
 
@@ -47,7 +47,7 @@
     padding: 10px 20px 0 20px;
   }
 
-  .navigation> a > img{
+  .navigation>a>img {
     width: 145px;
     height: 47px;
   }
