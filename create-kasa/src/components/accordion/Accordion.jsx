@@ -19,10 +19,6 @@ const Accordion = ({ title, content }) => {
     transition: 'transform 0.4s',
   }
 
-  if(isOpen) {
-    
-  }
-
 
   return (
     <div className={classNames(!isOpen && 'collapse', 'accordion-container')}>

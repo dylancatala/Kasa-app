@@ -14,6 +14,10 @@
   color: #FF6060;
 }
 
+p {
+  margin: 0;
+}
+
 
 
 .profile-picture>img {
@@ -23,11 +27,12 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px)  {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .profile-picture>img {
     width: 55px;
     height: 55px;
   }
+
   .profile-name {
     font-size: 15px;
   }
@@ -40,6 +45,7 @@
     width: 50px;
     height: 50px;
   }
+
   .profile-name {
     font-size: 15px;
   }
