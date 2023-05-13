@@ -40,7 +40,7 @@ body,
 
   .container>main {
     padding: 0 20px;
-    min-height: calc(100vh - 158px - 84px);
+    min-height: calc(100vh - 158px - 83px);
   }
 }
 

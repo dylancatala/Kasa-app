@@ -63,4 +63,12 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .arrows-buttons>i {
+    font-size: 20px;
+  }
+
+  .image-counter {
+    display: none;
+  }
 }
