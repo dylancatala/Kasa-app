@@ -3,10 +3,7 @@ import Footer from './components/footer/Footer';
 
 import Navigation from './components/navigation/Navigation';
 
-import About from './pages/about/About';
-import Home from './pages/home/Home';
-import NotFound from './pages/notfound/NotFound'
-import Products from './pages/products/Products'
+import { routes } from './routes/Routes';
 
 function App() {
   return (
@@ -15,10 +12,9 @@ function App() {
         <Navigation />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/products/:id" element={<Products />} />
-            <Route path="*" element={<NotFound />} />
+            {routes.map(({ path, element }, idx) => (
+              <Route key={idx} path={path} element={element} />
+            ))}
           </Routes>
         </main>
         <Footer />
