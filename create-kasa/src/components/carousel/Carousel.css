@@ -10,7 +10,7 @@
   justify-content: flex-end;
 }
 
-.fa-solid {
+.arrows-buttons>img {
   font-size: 70px;
   cursor: pointer;
   color: white;
@@ -64,8 +64,8 @@
     justify-content: space-between;
   }
 
-  .arrows-buttons>i {
-    font-size: 20px;
+  .arrows-buttons>img {
+    width: 20px;
   }
 
   .image-counter {

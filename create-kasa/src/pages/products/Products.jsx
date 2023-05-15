@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './Products.css';
 import Carousel from '../../components/carousel/Carousel';
 import dataHouse from '../../data/logements.json';
@@ -13,13 +13,12 @@ const Products = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     const data = dataHouse.find((item) => item.id === id);
-    setData(data)
+    data ? setData(data) : navigate('/404', { replace: true });
   }, [id]);
-
-
-
 
   return (
     <div>

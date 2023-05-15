@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Accordion.css';
 import { classNames } from './../../helpers/style';
+import chevron from '../../images/chevron.png';
 
 const Accordion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const Accordion = ({ title, content }) => {
     <div className={classNames(!isOpen && 'collapse', 'accordion-container')}>
       <header onClick={() => setIsOpen(!isOpen)} className='accordion-header '>
         <p className='accordion-title'>{title}</p>
-        <button><i className="fa-solid fa-chevron-down" style={style}></i></button>
+        <button><img src={chevron} alt="Chevron" style={style} /></button>
       </header>
       <div className='accordion-content' dangerouslySetInnerHTML={{ __html: data }} />
     </div>

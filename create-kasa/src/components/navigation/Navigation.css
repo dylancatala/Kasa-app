@@ -28,7 +28,8 @@
 
 
 .navigation a:not(.logo):active,
-.navigation a:not(.logo):hover {
+.navigation a:not(.logo):hover,
+.navigation a:not(.logo).active {
   border-bottom: 2px solid #FF6060;
 }
 
